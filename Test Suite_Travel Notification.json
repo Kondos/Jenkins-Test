@@ -1,0 +1,1817 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test Suite - Travel Notification",
+		"_postman_id": "0ad2d195-ca7a-7870-800d-75934e31a3be",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Happy Path",
+			"description": "",
+			"item": [
+				{
+					"name": "post Travel Notification - dev",
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"3\",\r\n\"startDate\":\"2017-09-21\",\r\n\"endDate\":\"2017-09-22\",\r\n\"countryCode\":\"CAN\",\r\n\"stateCode\":\"ON\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get Travel Notification - dev",
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "GET",
+						"header": [
+							{
+								"key": "language",
+								"value": "en,",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York,",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650,",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7,",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26,",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b,",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0,",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1,",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB,",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8,",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "3",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"5\",\r\n\"startDate\":\"2017-05-26\",\r\n\"endDate\":\"2017-05-30\",\r\n\"countryCode\":\"USA\",\r\n\"stateCode\":\"ON\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "del Travel Notification - dev",
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/1/travel-notifications/1234",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QAT-542 - Business Rules",
+			"description": "",
+			"item": [
+				{
+					"name": "QAT-542 - Sanctioned Countries - Iran",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"COUNTRY_CODE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"IRN\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Sanctioned Countries - Sudan",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"COUNTRY_CODE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"SDN\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Sanctioned Countries - Syria",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"COUNTRY_CODE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"SYR\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Sanctioned Countries - North Korea",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"COUNTRY_CODE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"PRK\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Mandatory Fields - Additional Comment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"COUNTRY_CODE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-06-21\",\r\n\"endDate\":\"207-05-22\",\r\n\"countryCode\":\"USA\",\r\n\"stateCode\":\"ON\",\r\n\"multipleCountries\":true\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Mandatory Fields - Multiple Countries",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"MULTIPLE_COUNTRIES\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"USA\",\r\n\"stateCode\":\"ON\",\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Mandatory Fields - Start Date",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"START_DATE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"endDate\":\"207-05-22\",\r\n\"countryCode\":\"USA\",\r\n\"stateCode\":\"ON\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Mandatory Fields - End Date",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"END_DATE\");",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"2\",\r\n\"startDate\":\"2017-05-21\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-542 - Mandatory Fields - client Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Error Code Validation\"] = responseBody.has(\"8888\");",
+									"tests[\"Field Validation\"] = responseBody.has(\"CLIENT_ID\");",
+									"",
+									"tests[\"Status code is 400\"] = responseCode.code === 400;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"startDate\":\"2017-05-21\",\r\n\"endDate\":\"2017-05-22\",\r\n\"countryCode\":\"PRK\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QAT-543 - Weekend/Holiday Date Handling",
+			"description": "",
+			"item": [
+				{
+					"name": "QAT-543 - Holidays - New Year's Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-06-30\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-07-04\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2018-01-01\",\r\n\"endDate\":\"2018-01-01\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Labour Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-09-01\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-09-05\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-09-04\",\r\n\"endDate\":\"2017-09-04\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Canada Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-06-30\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-07-04\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-07-03\",\r\n\"endDate\":\"2017-07-03\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Thanksgiving Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-10-06\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-10-10\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-10-09\",\r\n\"endDate\":\"2017-10-09\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Rememberance Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-11-10\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-11-14\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-11-13\",\r\n\"endDate\":\"2017-11-13\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Christmas Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-12-22\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-12-27\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-12-25\",\r\n\"endDate\":\"2017-12-25\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Holidays - Boxing Day",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2017-12-22\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2017-12-27\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2017-12-26\",\r\n\"endDate\":\"2017-12-26\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Weekend - Saturday",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2018-05-04\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2018-05-07\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2018-05-05\",\r\n\"endDate\":\"2018-05-05\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Weekend - Sunday",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2018-05-04\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2018-05-07\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2018-05-06\",\r\n\"endDate\":\"2018-05-06\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "QAT-543 - Weekend - Wednesday",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Start Date Validation\"] = responseBody.has(\"2018-05-01\");",
+									"tests[\"End Date Validation\"] = responseBody.has(\"2018-05-02\");",
+									"tests[\"Status code is 200\"] = responseCode.code === 200;"
+								]
+							}
+						}
+					],
+					"request": {
+						"url": "https://dev1.cardinaldev.io/accounts-service/accounts/2/travel-notifications ",
+						"method": "POST",
+						"header": [
+							{
+								"key": "language",
+								"value": "en",
+								"description": ""
+							},
+							{
+								"key": "channel-timezone-name",
+								"value": "America/New_York",
+								"description": ""
+							},
+							{
+								"key": "timestamp",
+								"value": "2016-04-06T10:16:52.650",
+								"description": ""
+							},
+							{
+								"key": "uservice-correlation-id",
+								"value": "1e8b11b8-ee65-477d-b8fc-40675fc88ea7",
+								"description": ""
+							},
+							{
+								"key": "uservice-message-id",
+								"value": "c5914247-8eca-4cb3-a70d-88bd52186f26",
+								"description": ""
+							},
+							{
+								"key": "uservice-traceability-id",
+								"value": "f9349a60-f2d7-414b-9900-b5209217015b",
+								"description": ""
+							},
+							{
+								"key": "uservice-app-version",
+								"value": "1.0",
+								"description": ""
+							},
+							{
+								"key": "uservice-api-version",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "uservice-channel-type",
+								"value": "RESPONSIVE_WEB",
+								"description": ""
+							},
+							{
+								"key": "uservice-client-id",
+								"value": "1",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n\"clientId\":\"1\",\r\n\"startDate\":\"2018-05-02\",\r\n\"endDate\":\"2018-05-02\",\r\n\"countryCode\":\"HRV\",\r\n\"multipleCountries\":true,\r\n\"comments\":\"Suzanne et Joseph étaient nés\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
