@@ -1,14 +1,12 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
+    triggers {
+        cron('1 H * * *')
+    }
     stages {
-        stage('Build') {
+        stage('Example') {
             steps {
-                sh 'echo "Hello World"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+                echo 'Hello World'
             }
         }
     }
